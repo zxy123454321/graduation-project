@@ -1,0 +1,357 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+    list-style:none;
+    text-decoration:none;
+}
+h2{
+    text-align:center;
+}
+body{
+    width:1800px;
+    margin:0 auto;
+}
+.inline{
+    display:inline-block !important;
+}
+.show{
+    display:block !important;
+}
+.hidden{
+    display:none !important;
+}
+/* 每层中的标题的横线 不能直接使用 */
+.line{
+    width:60%;
+    margin: 20px auto;
+    line-height: 3px;
+    border-left: 270px solid red;
+    border-right: 270px solid red;
+    text-align: center;
+}
+/* 每层的〉〉〉样式 不能直接使用 注意定位给下文可能造成的影响*/
+.more{
+    display:inline-block;
+    width:20px;
+    position: relative;
+    top:0;
+    left:345px;
+}
+/* 每层中的中间的分割线 有浮动，不能直接使用，注意清浮动*/
+.verticalline{
+    float:left;
+    width:2px;
+    height:180px;
+    background-color:#9D896C;
+    margin:5% 4% 5% 4%;
+}
+/* 每层中的大标题 */
+.floor_title{
+    font-weight:bold;
+    font-size:20px;
+}
+
+/* 每层中的左右两边的大标题 */
+.floor_second_title{
+    padding:0 0 10px 0;
+}
+
+
+/* 
+    每层中的文章的标题 
+    此时不设置静态页面ul下面的li中的样式，改为添加适当的类，article_title和article_content。
+    index.html中的li标签被注释掉了，也就是这个原因
+    通过服务器传过来的数据，动态的创建li标签
+*/
+/* .floor_third_title{
+    font-weight:bold;
+    padding:0 0 5px 0;
+}
+.floor_third_title+p>a{
+    display:inline-block;
+    overflow:hidden;
+    height:28px;
+    line-height:28px;
+    font-size:12px;
+} */
+.article_title{
+    font-weight:bold;
+    padding:0 0 5px 0;
+    opacity:0.9;
+}
+.article_content{
+    display:inline-block;
+    overflow:hidden;
+    height:28px;
+    line-height:28px;
+    font-size:12px;
+    color:#D7B599;
+    cursor: pointer;
+}
+
+
+
+
+
+/* .nav_head{
+    width:100%;
+    height:46px;
+    line-height:46px;
+    background:#F5F5F5;
+}
+.nav_head_body{
+   width:64%;
+   margin:0 auto;
+}
+.nav_head_body:after{
+    content:"";
+    display:block;
+    clear:both;
+}
+.nav_head_left{
+    float:left;
+}
+.nav_head_right{
+    float:right;
+    width:360px;
+}
+.nav_head_right>ul{
+    display:flex;
+    justify-content: space-between;
+}
+.nav_mid{
+    width:100%;
+    background:#E9E3DC;
+}
+.nav_mid_body{
+    width:64%;
+    height:104px;
+    line-height:104px;
+    margin:0 auto;
+}
+.nav_mid_body:after{
+    content:"";
+    display:block;
+    clear:both;
+}
+.nav_mid_body_left{
+    float:left;
+    height:104px;
+}
+.nav_mid_body_right{
+    float:right;
+}
+.nav_search_box form>input{
+    width:280px;
+    height:40px;
+    margin-right:-8px;
+    border:0px;
+}
+.nav_search_box form>span>input{
+    width:72px;
+    height:40px;
+    border:0px;
+    background-color:#9D896C;
+    font-size:18px;
+    color:white;
+}
+.nav_foot{
+    width:100%;
+    background-color:#9D896C;
+}
+.nav_foot_body{
+    height:45px;
+    line-height:45px;
+    width:64%;
+    margin:0 auto;
+}
+.nav_foot_body>a{
+    display:inline-block;
+    width:10%;
+    height:45px;
+    text-align:center;
+}
+.navColor{
+    background-color:#7C4400;
+} */
+.main{
+    width:100%;
+    background-color:#f5f5f5;
+}
+/* 可以变色的导航栏 */
+.nav_foot{
+    width:100%;
+    background-color:#9D896C;
+}
+.nav_foot_body{
+    height:45px;
+    line-height:45px;
+    width:64%;
+    margin:0 auto;
+}
+.nav_foot_body>a{
+    display:inline-block;
+    width:10%;
+    height:45px;
+    text-align:center;
+}
+.navColor{
+    background-color:#7C4400;
+}
+
+/* 左边部分样式 */
+.main_left{
+    width:18%;
+    display:inline-block;
+}
+.main_left_body{
+    width:240px;
+    margin:0 0 0 50px;
+    position: fixed;
+    top:210px; 
+    z-index:10;
+    /* background:#9D896C; */
+}
+.main_left_body a{
+    display:block;
+    text-align:center;
+    height:80px;
+    line-height:80px;
+    font-size:24px;
+    font-weight:bold;
+    color:#000000;
+}
+/* 右边部分样式 */
+.main_right{
+    display:inline-block;
+    width:17%;
+}
+.main_right_body{
+    position: fixed;
+    bottom:100px;
+    right:5px;
+    width:48px;
+    height:24px;
+    line-height:24px;
+}
+.return_top{
+   text-align: center;
+   font-weight: bold;
+   background-color:#E7DEC6;
+   color:black;
+}
+
+/* 中间部分样式 */
+.main_mid{
+    width:64%;
+    display: inline-block;
+    background-color:#E7DEC6;
+    margin-left:-8px;
+}
+.main_mid_top{
+    position: relative;
+    margin:30px 0 0 0;
+}
+.main_mid_carousel{
+    height:280px;
+    display:inline-block;
+    width:720px;
+    padding-left:25px;
+}
+.main_mid_carousel a{
+    display:none;
+}
+.main_mid_carousel_leftclick{
+    z-index:20;
+    font-size:28px;
+    font-weight:bold;
+    display:inline-block;
+    position: absolute;
+    top:135px;
+    left:45px;
+}
+.main_mid_carousel_rightclick{
+    z-index:20;
+    font-size:28px;
+    font-weight:bold;
+    display:inline-block;
+    position: absolute;
+    top:135px;
+    left:815px;
+}
+.main_mid_list::-webkit-scrollbar {display:none}
+.main_mid_list{
+    display:inline-block;
+    font-size:20px;
+    height:280px;
+    margin-left:138px;
+    background:white;
+}
+.main_mid_list li{
+    width:260px;
+    height:40px;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+    padding:10px 0 10px 0px;
+    cursor: pointer;
+}
+
+
+/* 每一层的样式*/
+.main_mid_outer{
+    margin:64px 0 0 0;
+    background-color:#EEEEEE;
+    overflow:hidden;
+}
+
+.main_mid_outer_info{
+    height:240px;
+}
+.main_mid_outer_info:after{
+    content:"";
+    display:block;
+    clear:both;
+}
+.main_mid_outer_info_left{
+    float:left;
+    width:38%;
+    margin-left:8%;
+}
+.main_mid_outer_info_right{
+    float:left;
+    width:38%;
+    margin-left:8%;
+}
+.main_mid_outer_info li{
+    padding:4px 0;
+}
+/* 网站尾部的样式 */
+/* .foot{
+    background-color:#9D896C;
+    height:152px;
+}
+.foot_body{
+    width:64%;
+    margin:20px auto;
+}
+.foot_link{
+    margin:20px 0 20px 0;
+}
+.foot_link_title{
+    margin-bottom:20px;
+}
+.foot_link a{
+    display: inline-block;
+    margin:5px 0;
+}
+.foot_version{
+    text-align: center;
+    height:30px;
+    line-height:30px;
+} */
+
+
+
+

@@ -1,0 +1,32 @@
+*{
+    margin:0;
+    padding:0;
+    text-decoration: none;
+}
+body{
+    width:1800px;
+    margin:0 auto;
+}
+.foot{
+    background-color:#9D896C;
+    height:152px;
+}
+.foot_body{
+    width:64%;
+    margin:0 auto;
+}
+.foot_link{
+    margin:0 0 20px 0;
+}
+.foot_link_title{
+    margin-bottom:20px;
+}
+.foot_link a{
+    display: inline-block;
+    margin:5px 0;
+}
+.foot_version{
+    text-align: center;
+    height:30px;
+    line-height:30px;
+}

@@ -1,0 +1,34 @@
+*{
+    margin:0;
+    padding:0;
+    list-style:none;
+}
+.main{
+    width:1200px;
+    margin:0 auto;
+    height:624px;
+}
+.search_main{
+    margin:9px 0 0 0;
+    height:565px;
+    overflow:auto;
+}
+.search_main_item{
+    margin:7px 0;
+    width:500px;
+}
+.title{
+    font-weight:bold;
+    height:30px;
+    line-height:30px;
+}
+.content{
+    height:40px;
+    line-height:20px;
+    font-size:12px;
+    overflow-y:hidden;
+    cursor: pointer;
+}
+.page{
+    margin:15px 0 0 0;
+}

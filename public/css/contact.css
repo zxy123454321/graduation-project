@@ -1,0 +1,18 @@
+*{
+    margin:0;
+    padding:0;
+}
+.mian{
+    width:100%;
+    background: #EFEAE5;
+}
+.content{
+    width:1200px;
+    margin:0 auto;
+}
+.contact_content{
+    text-align:center;
+    font-size:20px;
+    padding:40px 0 0 0;
+    height:584px;
+}

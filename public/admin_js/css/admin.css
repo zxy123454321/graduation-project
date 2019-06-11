@@ -1,0 +1,151 @@
+html,body,#main{
+    width: 100%;
+    height: 100%;
+}
+#admin{
+    margin:0 auto;
+    padding:30px 0;
+    text-align:center;
+    font-weight:bold;
+    font-size:36px;
+}
+
+/* 左边导航栏 */
+#aside{
+    width: 20%;
+    height: 100%;
+    background-color: aqua;
+    float:left;
+}
+#aside li{
+    text-align: center;
+    padding: 27px 0px;
+    border-bottom: 2px solid green;
+}
+
+
+/* 右边内容 */
+#content{
+    width: 80%;
+    height: 100%;
+    background-color: rgb(50, 204, 158);
+    float:left;
+    height:927px;
+    overflow:auto;
+}
+#content::-webkit-scrollbar {display:none}
+/* 文章管理部分 */
+.search{
+    width:900px;
+    height:72px;
+    line-height: 72px;
+    margin:0 auto;
+}
+.search_btn{
+    display: inline-block;
+    font-size: 24px;
+    width:120px;
+    height:45px;
+    line-height:45px;
+    color:white;
+    cursor: pointer;
+}
+.add_btn{
+    font-size:20px;
+    widows: 120px;
+    height:45px;
+    line-height:45px;
+    text-align:center;
+    cursor: pointer;
+}
+#search_text{
+    width:400px;
+    height:45px;
+}
+.border_head{
+    text-align: center;
+    background:rgb(179, 162, 132);
+}
+td{
+    height:50px;
+    line-height:50px;
+    overflow:hidden;
+    text-overflow: ellipsis;
+    white-space:nowrap;
+	word-break:keep-all;
+}
+.content_item{
+    height:50px;
+    line-height:50px;
+    overflow:hidden;
+    text-overflow: ellipsis;
+    white-space:nowrap;
+	word-break:keep-all;
+}
+/* 帐户管理部分 */
+#allAccount{
+    width:800px;
+    height:72px;
+    line-height:72px;
+    text-align:center;
+    margin:0 auto;
+    font-weight:bold;
+    font-size:30px;
+}
+#addAccount{
+    width:100px;
+    height:48px;
+    line-height: 54px;
+    margin:0 auto;
+    text-align:center;
+    background:azure;
+    cursor: pointer;
+}
+
+/* 弹框样式 */
+.bugger{
+    position: fixed;
+    top:0;
+    width:100%;
+    height:100%;
+    background:rgba(0, 0, 0, 0.3);
+    display:none;
+}
+#mid_form{
+    margin:200px 0 0 40%;
+    background: green;
+    width:400px;
+    height:480px;
+}
+#mid_form input{
+    height:40px;
+    width:300px;
+    margin:0 0 0 10%;
+    margin:4px 0;
+}
+#mid_form_file{
+    margin:100px 0 100px 40%;
+    background: green;
+    width:420px;
+    height:800px;
+}
+#mid_form_file div{
+    width:400px;
+    height:60px;
+    line-height:60px;
+}
+#mid_form_file input{
+    display: block;
+    height:45px;
+    width:320px;
+    margin:0 0 0 10%;
+}
+#text{
+    margin:0 0 0 10%;
+}
+#aditSubmit{
+    display: block;
+    margin:10px auto;
+    width:120px;
+    height:30px;
+}

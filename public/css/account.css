@@ -1,0 +1,251 @@
+*{
+    margin:0;
+    padding:0;
+    list-style:none;
+    text-decoration:none;
+    background-color:#F5F6F7;
+}
+.inline{
+    display:inline-block !important;
+}
+.show{
+    display:block !important;
+}
+.hidden{
+    display:none !important;
+}
+.line{
+    border-bottom:1px solid grey;
+}
+.jump{
+    display:none;
+    position: absolute;
+    top:50px;
+    left:0px;
+    width:860px;
+    height:400px;
+    color:white;
+    font-size:24px;
+    line-height:420px;
+    text-align: center;
+    line-height:420px;
+    border:1px solid black;
+    background:rgba(0,0,0,0.8)
+}
+.main{
+    width:60%;
+    margin:0 auto;
+    /* height:2000px; */
+}
+.main_left{
+    display:inline-block;
+    width:16%;
+}
+.main_right{
+    display:inline-block;
+    width:16%;
+}
+.main_mid{
+    display:inline-block;
+    width:1200px;
+    /* height:2000px; */
+    position: relative;
+}
+.main_mid_left{
+    display:inline-block;
+    border:1px solid red;
+    width:290px;
+}
+.main_mid_left_item{
+    text-align:center;
+    height:48px;
+    line-height:48px;
+}
+.main_mid_left_color{
+    background:red;
+}
+.main_mid_right{
+    display:inline-block;
+    border:1px solid red;
+    width:900px;
+    height:464px;
+    margin:0 0 0 1%;
+    position: absolute;
+    top:0;
+    overflow:auto;
+}
+/* 清除右边滚动条 */
+.main_mid_right::-webkit-scrollbar{
+    display:none;
+}
+.main_mid_right_content{
+    height:40px;
+    line-height:40px;
+    margin:0 0 0 30px;
+    display:none;
+    position: relative;
+}
+.main_mid_right_content::after{
+    display:block;
+    content:"";
+    clear:both;
+}
+/* 以下为个人资料部分的ｃｓｓ样式，我准备用模板引擎的方式，将要显示的内容从服务器端加载到页面 */
+#changeInfo{
+    /* width:100px;
+    height:100px;
+    line-height:100px;
+    text-align:center;
+    border-radius: 50%;
+    float:left;
+    margin:20px 0 0 0; */
+    position: absolute;
+    left:640px;
+    top:400px;
+    z-index: 5;
+    cursor: pointer;
+}
+.personal_info{
+    width:720px;
+    float:right;
+    margin:0 30px 80px 0;
+}
+.right_info{
+    height:100px;
+    line-height:100px;
+}
+/* 以下为撰写文章部分 */
+.my_article{
+    margin:20px 0 0 0;
+}
+.sendbtns::after{
+    content:"";
+    display:block;
+    clear:both;
+}
+.sendbtn{
+    width:80px;
+    height:40px;
+    line-height:40px;
+    text-align:center;
+    background:red;
+    float:right;
+    margin:0 15px 0 10px;
+}
+/*  以下为文章收藏部分*/
+.collect_item{
+    display: flex;
+    justify-content: space-between;
+}
+.collect_item_title{
+    width:500px;
+    font-weight:bold;
+    height:50px;
+    line-height:50px;
+    cursor: pointer;
+}
+.collect_item_del{
+    width:100px;
+    height:50px;
+    line-height:50px;
+    text-align: center;
+    margin-right:100px;
+    cursor: pointer;
+}
+/* 以下为我的点赞部分 */
+.zan_item{
+    display: flex;
+    justify-content: space-between;
+}
+.zan_item_title{
+    width:500px;
+    font-weight:bold;
+    height:50px;
+    line-height:50px;
+    cursor: pointer;
+}
+.zan_item_del{
+    width:100px;
+    height:50px;
+    line-height:50px;
+    text-align: center;
+    margin-right:100px;
+    cursor: pointer;
+}
+/* 以下为我的评论部分 */
+.comment_item{
+    display: flex;
+    justify-content: space-between;
+}
+.comment_title{
+    font-weight:bold;
+    cursor: pointer;
+}
+.comment_content{
+    width:500px;
+    font-size:12px;
+    height:24px;
+    line-height:24px;
+}
+.comment_item_del{
+    font-size:12px;
+    width:100px;
+    height:24px;
+    line-height:24px;
+    text-align: center;
+    margin-right:100px;
+    background:antiquewhite;
+    cursor: pointer;
+}
+/* 以下为我的文章部分 */
+.article_item{
+    display: flex;
+    justify-content: space-between;
+}
+.article_item_title{
+    width:500px;
+    font-weight:bold;
+    height:50px;
+    line-height:50px;
+    cursor: pointer;
+}
+.article_item_del{
+    width:100px;
+    height:50px;
+    line-height:50px;
+    text-align: center;
+    margin-right:100px;
+    cursor: pointer;
+}
+
+/* 以下为幕布 */
+.mubu{
+    height:428px;
+    width:900px;
+    display:none;
+    background:rgba(0,0,0,0.8);
+    position: absolute;
+    left:305px;
+    top:40px;
+    z-index:10;
+}
+.boxSize{
+    width:300px; 
+    margin:10px auto; 
+    line-height:20px;
+}
+.boxSize>input{
+    width:300px;
+    height:24px;
+    line-height:240px;
+}
+.tijiao{
+    width:50px;
+    height:30px;
+    margin:0 auto;
+    text-align: center;
+    line-height:30px;
+    cursor: pointer;
+    background-color: red;
+}
+

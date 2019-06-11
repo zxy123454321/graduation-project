@@ -1,0 +1,46 @@
+*{
+    margin:0;
+    padding:0;
+    list-style:none;
+}
+.intro_main{
+    width:100%;
+    background:#F5F5F5;
+    height:800px;
+}
+.intro_main_body{
+    width:1200px;
+    background:white;
+    margin:0 auto;
+    height:800px;
+}
+.introduce_title{
+    height:40px;
+    line-height:40px;
+    font-size:24px;
+    text-align:center;
+    padding:20px 0;
+}
+.introline{
+    border-bottom:1px dotted grey;
+    width:94%;
+    margin:0 auto;
+}
+.introline::after{
+    display:block;
+    clear:both;
+    content:"";
+}
+.introline_item{
+    width:540px;
+    height:42px;
+    line-height:42px;
+    float:left;
+    margin:0 0 0 10px;
+}
+.introline_item_attribute{
+    color:#9999B3;
+}
+.introline_item_content{
+    margin:0 0 0 48px;
+}

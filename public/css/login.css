@@ -1,0 +1,77 @@
+*{
+    margin:0;
+    padding:0;
+    background:#EFEAE5;
+    text-decoration: none;
+}
+.main{
+    position: absolute;
+    width:800px;
+    height:540px;
+    top:50%;
+    left:50%;
+    margin:-270px 0 0 -400px;
+    background-color:#FFFFFF;
+    text-align:center;
+}
+.login_title{
+    margin:120px 0 40px 0;
+    background-color:#FFFFFF;
+}
+.classify{
+    background-color: #fff;
+}
+.classify span{
+    width:100px;
+    height:30px;
+    line-height:30px;
+    display:inline-block;
+    background-color: #fff;
+    cursor: pointer;
+}
+.classify span:first-child{
+    background-color: green;
+}
+/* 客户登录部分 */
+.login_form_custom{
+    margin:0 auto;
+    width:356px;
+    background-color:#FFFFFF;
+    /* display: none; */
+}
+.login_form_custom>form{
+    background-color:#FFFFFF;
+}
+/* 管理员登录部分 */
+.login_form_admin{
+    margin:0 auto;
+    width:356px;
+    background-color:#FFFFFF;
+    display:none;
+}
+.login_form_admin>form{
+    background-color:#FFFFFF;
+}
+
+.login_item{
+    height:48px;
+    width:320px;
+    margin:20px auto;
+    background-color:#FFFFFF;
+}
+.login_item_btn{
+    line-height:48px;
+    height:48px;
+    width:320px;
+    display:inline-block;
+    text-align:center;
+    background-color:red;
+}
+.login_item_input{
+    height:48px;
+    width:320px;
+    background-color:#FFFFFF;
+}
+.login_text{
+    background-color:#FFFFFF;
+}

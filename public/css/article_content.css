@@ -1,0 +1,133 @@
+*{
+    margin:0;
+    padding:0;
+    text-decoration:none;
+    /* box-sizing:border-box; */
+}
+.backColor{
+    background:red !important;
+}
+.main{
+    background-color:#E0C08D;
+    width:1800px;
+    margin:0 auto;
+}
+
+.main_body_mid{
+    margin:0 18%;
+    display:inline-block;
+    width:65%;
+}
+
+.main_body_mid_content{
+    text-align:center;
+    background:white;
+}
+.main_body_mid_content_title{
+    /* background:white; */
+    padding:20px 0 0 0;
+}
+.main_body_mid_content_tip{
+    /* background:white; */
+    padding:20px 0 10px 0;
+}
+.main_body_mid_content_body{
+    /* background:white; */
+}
+/* https://www.cnblogs.com/alice626/p/6206760.html 参考此网站转发的文章，从而使用的该方法，添加一个伪类 */
+.main_body_mid_content_pbody::-webkit-scrollbar {display:none}
+.main_body_mid_content_pbody{
+    font-size:20px;
+    line-height:32px;
+    overflow:auto;
+    border-top: 1px solid red;
+    padding:10px 20px;
+}
+.main_body_mid_content_page{
+    /* background:white; */
+}
+.main_body_mid_content_page::after{
+    display: block;
+    clear: both;
+    content:"";
+}
+/* 点击收藏，收藏颜色发生改变，把这条记录写进数据库 */
+.collect{
+    float:left;
+    width:80px;
+    height:40px;
+    line-height:40px;
+    text-align:center;
+    border:1px solid red;
+    margin:0 24px 0 420px;
+    cursor: pointer;
+}
+.zan{
+    float:left;
+    width:80px;
+    height:40px;
+    line-height:40px;
+    text-align:center;
+    border:1px solid red;
+    cursor: pointer;
+}
+.number{
+    float:left;
+    width:80px;
+    height:40px;
+    line-height:40px;
+    border:1px solid red;
+}
+.reader_comment_mycontent{
+    background:white;
+}
+.form_control{
+    margin:20px 0 0 30px;
+}
+.send_message{
+    margin:10px 0 0 0;
+}
+.send_message::after{
+    content:"";
+    clear:both;
+    display:block;
+}
+.remove{
+    width:68px;
+    height:26px;
+    line-height:26px;
+    border:1px solid grey;
+    border-radius: 4px;
+    text-align:center;
+    float:right;
+    margin:0 20px 0 0;  
+    cursor: pointer;
+}
+.send{
+    width:68px;
+    height:26px;
+    line-height:26px;
+    border:1px solid grey;
+    border-radius: 4px;
+    text-align:center;
+    float:right;
+    margin:0 70px 0 0;
+    background:#E44B4B;
+    cursor: pointer;
+}
+.reader_comment_item{
+    background:white;
+    padding: 0 0 45px 0;
+}
+.reader_comment_item_content{
+    display:inline-block;
+    height:40px;
+    line-height:40px;
+    padding:0 0 0 36px;
+    width:60%;
+    overflow:hidden;
+}
+.reader_comment_item_name{
+    font-weight: bold;
+}
+
